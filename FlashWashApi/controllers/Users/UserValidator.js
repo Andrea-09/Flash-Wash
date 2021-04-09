@@ -12,7 +12,7 @@ const UserValidator = {
                 .email(),
             password: joi.string()
                 .min(6)
-                .required()
+                .required() 
         })
 
         return validateSchema.validateAsync(data)
