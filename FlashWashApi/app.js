@@ -30,7 +30,7 @@ mongoose.connect(process.env.MONGO_URI, {
 
 var userRoutes = require('./routes/UserRouter')
 
-app.use('/users', userRoutes);
+app.use('/users', userRoutes)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
